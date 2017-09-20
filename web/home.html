@@ -5,15 +5,18 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Home</title>
 </head>
-<body>
+<body onload="load_navbar()">
 <div class="container">
     <!-- Navigation bar -->
-    <div class="topnav" id="topnav">
-        <a href="home.html">Home</a>
-        <a href="tours.html">Tours</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navigationToggle()">&#9776;</a>
+    <div class="navigation-container">
+        <label for="show-menu" class="show-menu">Show Menu</label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
     </div>
     <!-->
 
@@ -39,6 +42,17 @@
         </div>
         <div class="content-right">
             <h2 class="content-inner-title">NIGHTWISH</h2>
+        </div>
+    </div>
+
+    <div class="sub-content">
+        <div class="sub-content-left">
+            <div class="sub-content-left-title">
+                UPCOMING EVENTS
+            </div>
+        </div>
+        <div class="sub-content-right">
+
         </div>
     </div>
     <!-->

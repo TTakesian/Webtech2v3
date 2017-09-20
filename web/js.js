@@ -9,3 +9,7 @@ function navigationToggle() {
         x.className = "topnav";
     }
 }
+
+function load_navbar() {
+    document.getElementById("nav-container").innerHTML='<object type="text/html" width="100%" data="WEB-INF/navigation-bar.html" ></object>';
+}
