@@ -1,12 +1,17 @@
-.body{
-
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 
 /** The container which contains all of the divs **/
 .container{
     width: 100%;
+    height: 1200px;
     position: relative;
-    background-color: red;
+    background-image: url("resources/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /** Navigation **/
@@ -36,19 +41,109 @@
 }
 
 
+/** Header **/
+.header{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.header-title{
+    font-size: 4em;
+    color: #ffffff;
+    padding: 10%;
+}
+
 /** Website content **/
 .content{
+    overflow: hidden;
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
+.content-left{
+    margin-left: 0.5%;
+    position: relative;
+    width: 33%;
+    height: 500px;
+    text-align: center;
+    float: left;
+    background-image: url("resources/img/metallica.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content-middle{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
+    width: 32%;
+    height: 500px;
+    text-align: center;
+    float: left;
+    background-image: url("resources/img/wt.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content-right{
+    margin-right: 0.5%;
+    position: relative;
+    width: 33%;
+    height: 500px;
+    text-align: center;
+    float: right;
+    background-image: url("resources/img/nw.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content-inner-title{
+    padding: 1%;
+    color: #ffffff;
+    font-size: 2em;
+    word-wrap: break-word;
+}
+
+.content-inner-container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: rgba(20, 15, 55,0.8);
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.content-inner-container:hover{
+    visibility: visible!important;
+    opacity: 1;
+}
+.content-inner-container-text {
+    position: relative;
+    color: #ffffff;
+}
+/** Footer **/
 .footer{
+    overflow: hidden;
     position: relative;
 }
 
+/** Sub-Footer **/
 .sub-footer{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
     position: relative;
+    text-align: center;
 }
 
+.sub-footer-content{
+    position: relative;
+    color: #ffffff;
+
+}
 /**Responsive elements **/
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
