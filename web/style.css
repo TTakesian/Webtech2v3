@@ -6,7 +6,7 @@ body{
 /** The container which contains all of the divs **/
 .container{
     width: 100%;
-    height: 1200px;
+    overflow: hidden;
     position: relative;
     background-image: url("resources/img/background.jpg");
     background-size: cover;
@@ -199,11 +199,12 @@ input[type=checkbox]:checked ~ #menu{
 
 /** Left sub-content **/
 .sub-content-left{
+    word-wrap: break-word;
+    float: left;
     position: relative;
     width: 33%;
     margin-left: 0.5%;
     background-color: rgba(18, 13, 53,0.5);
-
 }
 
 .sub-content-left-title{
@@ -213,17 +214,58 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .event{
+    overflow: hidden;
+    position: relative;
+}
 
+.event-text{
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+    color: #ffffff;
+    font-size: 1em;
+    width: 60%;
+    border-bottom: 1px solid transparent;
+    transition: 1s;
+
+}
+
+.event-text:hover{
+    border-color: #ffffff;
 }
 
 /** Right sub-content **/
 .sub-content-right{
+    word-wrap: break-word;
+    float: right;
     position: relative;
-    width: 66%;
+    width: 65.5%;
     margin-right: 0.5%;
     background-color: rgba(75, 4, 18,0.5);
 }
 
+.sub-content-right-title{
+    color: #ffffff;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.news{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-title{
+
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.news-date{
+    color: #e6e6e6;
+}
 /** Footer **/
 .footer{
     overflow: hidden;
