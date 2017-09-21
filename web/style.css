@@ -251,10 +251,14 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .news{
+    border:1px solid #ffffff;
     padding-left: 10px;
     padding-bottom: 10px;
     position: relative;
     overflow: hidden;
+    width: 33%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
 }
 
 .news-title{
@@ -264,7 +268,12 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .news-date{
+    font-size: 13px;
     color: #e6e6e6;
+}
+
+.news-text{
+    color: #ffffff;
 }
 /** Footer **/
 .footer{
