@@ -126,6 +126,7 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .content-left{
+    min-width: 350px;
     margin-left: 0.5%;
     position: relative;
     width: 33%;
@@ -138,6 +139,7 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .content-middle{
+    min-width: 350px;
     margin-left: 0.5%;
     margin-right: 0.5%;
     position: relative;
@@ -151,12 +153,13 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .content-right{
+    min-width: 350px;
     margin-right: 0.5%;
     position: relative;
     width: 33%;
     height: 500px;
     text-align: center;
-    float: right;
+    float: left;
     background-image: url("resources/img/nw.jpg");
     background-size: cover;
     background-position: center;
@@ -236,12 +239,14 @@ input[type=checkbox]:checked ~ #menu{
 
 /** Right sub-content **/
 .sub-content-right{
+    min-width: 250px;
     word-wrap: break-word;
-    float: right;
+    float: left;
     position: relative;
     width: 65.5%;
-    margin-right: 0.5%;
+    margin-left: 0.5%;
     background-color: rgba(75, 4, 18,0.5);
+    padding-bottom: 50px;
 }
 
 .sub-content-right-title{
@@ -250,17 +255,49 @@ input[type=checkbox]:checked ~ #menu{
     padding: 10px;
 }
 
-.news{
+.news_1{
+    min-width: 250px;
+    min-height: 250px;
+    float: left;
     border:1px solid #ffffff;
     padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
     position: relative;
     overflow: hidden;
-    width: 33%;
+    width: 30%;
     margin-left: 0.5%;
+
+}
+
+.news_2{
+    min-width: 250px;
+    min-height: 250px;
+    float: left;
+    border:1px solid #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    margin-left: 2%;
     margin-right: 0.5%;
 }
 
+.news_3{
+    min-width: 250px;
+    min-height: 250px;
+    float: left;
+    border:1px solid #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    margin-right: 0.5%;
+}
 .news-title{
 
     font-size: 1em;
@@ -296,6 +333,70 @@ input[type=checkbox]:checked ~ #menu{
 
 }
 /**Responsive elements **/
+@media screen and (max-width : 1565px){
+    .news_1{
+        min-width: 250px;
+        min-height: 250px;
+        float: left;
+        border:1px solid #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 30%;
+        margin-left: 0.5%;
+
+    }
+
+    .news_2{
+        min-width: 250px;
+        min-height: 250px;
+        float: left;
+        border:1px solid #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 30%;
+        margin-left: 2%;
+        margin-right: 0.0%;
+    }
+
+    .news_3{
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 63%;
+        margin-right: 0.0%
+    }
+}
+
+@media screen and (max-width : 873px){
+    .sub-content-left{
+        word-wrap: break-word;
+        float: left;
+        position: relative;
+        width: 100%;
+        margin-left: 0.0%;
+        background-color: rgba(18, 13, 53,0.5);
+    }
+
+    .sub-content-right{
+        word-wrap: break-word;
+        float: left;
+        margin-left: 0.0%;
+        position: relative;
+        width: 100%;
+        background-color: rgba(75, 4, 18,0.5);
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (max-width : 760px){
     /*Make dropdown links appear inline*/
     ul {
@@ -313,5 +414,52 @@ input[type=checkbox]:checked ~ #menu{
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
+    }
+}
+
+
+@media screen and (max-width : 727px){
+    .content-left{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .content-middle{
+        margin: 0%;
+        width: 100%;
+    }
+
+    .content-right{
+        margin: 0%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 574px){
+    .sub-content-right{
+        margin-right: 50px;
+    }
+
+    .news_1{
+        border:none;
+        width: 100%;
+        margin: 1%;
+        margin-left: 0.0%;
+
+    }
+
+    .news_2{
+        border:none;
+        width: 100%;
+        margin: 1%;
+        margin-right: 0.0%;
+        margin-left: 0.0%;
+    }
+
+    .news_3{
+        border:none;
+        width: 100%;
+        margin: 1%;
+        margin-right: 0.0%
     }
 }
