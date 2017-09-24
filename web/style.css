@@ -125,6 +125,81 @@ input[type=checkbox]:checked ~ #menu{
     height: auto;
 }
 
+.content-contact{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 1%;
+    background-color: rgba(20, 15, 55,0.8);
+    color: #ffffff;
+}
+
+.content-contact-left{
+    min-width: 493px;
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.content-contact-left-map{
+    position: relative;
+    height: 500px;
+    width: 95%;
+}
+
+.content-contact-right{
+    min-width: 493px;
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.content-contact-right-input{
+    border-radius: 15px;
+    height: 25px;
+    min-width: 100px;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+
+.content-contact-right-input:focus{
+     outline: none;
+    box-shadow: 0px 0px 8px 1px #f2c082;
+
+}
+
+.content-contact-right-btn{
+    padding: 15px;
+    font-size: 15px;
+    color: #f2c082;
+    background-color: #490715;
+    border: 1px solid #f2c082;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.3s;
+    font-weight: bold;
+    position: relative;
+}
+
+.content-contact-right-btn:hover{
+    color: #490715;
+    background-color: #f2c082;
+}
+
+.content-contact-right-btn:focus{
+    background-color: #8a530f;
+}
+
+.content-contact-comment{
+    height: 300px;
+    width: 80%;
+}
+
 .content-left{
     min-width: 350px;
     margin-left: 0.5%;
@@ -373,6 +448,15 @@ input[type=checkbox]:checked ~ #menu{
         overflow: hidden;
         width: 63%;
         margin-right: 0.0%
+    }
+}
+
+@media screen and (max-width : 1002px){
+    .content-contact-left{
+         width: 100%;
+     }
+    .content-contact-right{
+         width: 100%;
     }
 }
 

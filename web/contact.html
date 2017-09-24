@@ -5,8 +5,60 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Contact</title>
 </head>
-<body>
+<body onload="load_navbar()">
+    <div class="container">
+        <!-- Navigation bar -->
+        <div class="navigation-container">
+            <label for="show-menu" class="show-menu">Show Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <!-->
+        <!-- Header and welcome screen -->
+        <div class="header">
+            <h1 class="header-title">Welkom bij Music Festivals!</h1>
+        </div>
+        <!-->
 
-<script src="js.js"></script>
+        <div class="content">
+            <div class="content-contact">
+                <div class="content-contact-left">
+                    <h1>CONTACT</h1>
+                    <h2>Do you have a question or would you like to make contact with us?<br>
+                    Then please fill the contact form on the right and we will answer
+                        you<br> as soon as possible.</h2><br>
+                    <h2>LOCATION</h2>
+                    <h3>Goffertpark<br>
+                        Slotemaker de Bruïneweg<br>
+                        6532 Nijmegen<br> </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9863.554415374605!2d5.820867643203288!3d51.82646537501959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd37f35c5b91b9c8!2sGoffertpark!5e0!3m2!1sen!2snl!4v1506214425671" class="content-contact-left-map" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="content-contact-right">
+                    <h1>CONTACT FORM</h1>
+                    <form method="post">
+                        <h2>Name:</h2>
+                        <input type="text" name="name" class="content-contact-right-input" required><br>
+                        <h2> <b>E-mail:</b><br></h2>
+                        <input type="text" name="e-mail" class="content-contact-right-input" required><br>
+                        <h2>Comment:</h2>
+                        <textarea class="content-contact-right-input content-contact-comment"  type="text" name="content" required></textarea><br>
+                        <h2><input type="submit" class="content-contact-right-btn" value="Send"></h2>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Sub-footer -->
+        <div class="sub-footer">
+            <h5 class="sub-footer-content">© Tavet Takesian en Govert de Swart 2017</h5>
+        </div>
+        <!--->
+    </div>
+    <script src="js.js"></script>
 </body>
 </html>
