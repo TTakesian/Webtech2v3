@@ -15,108 +15,93 @@ body{
 }
 
 /** Navigation **/
-.navigation-container{
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+    .navigation-container{
+        position: relative;
+        overflow: hidden;
+        text-align: center;
 
-}
-/*Strip the ul of padding and list styling*/
-ul {
-    list-style-type:none;
-    padding:0;
-    width: 50%;
-    margin: auto;
-    position: relative;
-    font-size: 1.5em;
-}
-/*Create a horizontal list with spacing*/
-li {
-    display:inline-block;
-    margin-right: 1px;
-}
-/*Style for menu links*/
-li a {
-    display:block;
-    min-width:140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-bottom:1px solid transparent;
-    color: #fff;
-    text-decoration: none;
-    transition: 1s;
-}
-/*Hover state for top level links*/
-li:hover a {
-    border-color: #ffffff;
-}
-/*Style for dropdown links*/
-li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-}
-/*Hover state for dropdown links*/
-li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
-}
-/*Hide dropdown links until they are needed*/
-li ul {
-    display: none;
-}
-/*Make dropdown links vertical*/
-li ul li {
-    display: block;
-    float: none;
-}
-/*Prevent text wrapping*/
-li ul li a {
-    width: auto;
-    min-width: 100px;
-    padding: 0 20px;
-}
-/*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
-    display: block;
-}
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background: #19c589;
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-}
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-}
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
+    }
+    /*Strip the ul of padding and list styling*/
+    ul {
+        list-style-type:none;
+        padding:0;
+        width: 50%;
+        margin: auto;
+        position: relative;
+        font-size: 1.5em;
+    }
+    /*Create a horizontal list with spacing*/
+    li {
+        display:inline-block;
+        margin-right: 1px;
+    }
+    /*Style for menu links*/
+    li a {
+        display:block;
+        min-width:140px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-bottom:1px solid transparent;
+        color: #fff;
+        text-decoration: none;
+        transition: 1s;
+    }
+    /*Hover state for top level links*/
+    li:hover a {
+        border-color: #ffffff;
+    }
+    /*Style for dropdown links*/
+    li:hover ul a {
+        background: #f3f3f3;
+        color: #2f3036;
+        height: 40px;
+        line-height: 40px;
+    }
+    /*Hover state for dropdown links*/
+    li:hover ul a:hover {
+        background: #19c589;
+        color: #fff;
+    }
+    /*Hide dropdown links until they are needed*/
+    li ul {
+        display: none;
+    }
+    /*Make dropdown links vertical*/
+    li ul li {
+        display: block;
+        float: none;
+    }
+    /*Prevent text wrapping*/
+    li ul li a {
+        width: auto;
+        min-width: 100px;
+        padding: 0 20px;
+    }
+    /*Display the dropdown on hover*/
+    ul li a:hover + .hidden, .hidden:hover {
+        display: block;
+    }
+    /*Style 'show menu' label button and hide it by default*/
+    .show-menu {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        background: #19c589;
+        text-align: center;
+        padding: 10px 0;
+        display: none;
+    }
+    /*Hide checkbox*/
+    input[type=checkbox]{
+        display: none;
+    }
+    /*Show menu when invisible checkbox is checked*/
+    input[type=checkbox]:checked ~ #menu{
+        display: block;
+    }
+/** End Navigation **/
 
-/** Header **/
-.header{
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-
-}
-
-.header-title{
-    font-size: 2.5em;
-    color: #ffffff;
-    padding-top: 10%;
-    padding-bottom: 10%;
-
-}
 /** Website content **/
 .content{
     overflow: hidden;
@@ -125,288 +110,354 @@ input[type=checkbox]:checked ~ #menu{
     height: auto;
 }
 
-.content-contact{
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 1%;
-    background-color: rgba(20, 15, 55,0.8);
-    color: #ffffff;
-}
+/** Contact page **/
+    .content-contact{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding: 1%;
+        background-color: rgba(20, 15, 55,0.8);
+        color: #ffffff;
+    }
 
-.content-contact-left{
-    min-width: 493px;
-    position: relative;
-    float: left;
-    width: 50%;
-}
+    .content-contact-left{
+        min-width: 493px;
+        position: relative;
+        float: left;
+        width: 50%;
+    }
 
-.content-contact-left-map{
-    position: relative;
-    height: 500px;
-    width: 95%;
-}
+    .content-contact-left-map{
+        position: relative;
+        height: 500px;
+        width: 95%;
+    }
 
-.content-contact-right{
-    min-width: 493px;
-    position: relative;
-    float: left;
-    width: 50%;
-}
+    .content-contact-right{
+        min-width: 493px;
+        position: relative;
+        float: left;
+        width: 50%;
+    }
 
-.content-contact-right-input{
-    border-radius: 15px;
-    height: 25px;
-    min-width: 100px;
-    border: 1px solid #ffffff;
-    font-size: 18px;
-    padding: 5px;
-    transition: 0.3s;
-}
+    .content-contact-right-input{
+        border-radius: 15px;
+        height: 25px;
+        min-width: 100px;
+        border: 1px solid #ffffff;
+        font-size: 18px;
+        padding: 5px;
+        transition: 0.3s;
+    }
 
 
-.content-contact-right-input:focus{
-     outline: none;
-    box-shadow: 0px 0px 8px 1px #f2c082;
+    .content-contact-right-input:focus{
+         outline: none;
+        box-shadow: 0px 0px 8px 1px #f2c082;
 
-}
+    }
 
-.content-contact-right-btn{
-    padding: 15px;
-    font-size: 15px;
-    color: #f2c082;
-    background-color: #490715;
-    border: 1px solid #f2c082;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100px;
-    transition: 0.3s;
-    font-weight: bold;
-    position: relative;
-}
+    .content-contact-right-btn{
+        padding: 15px;
+        font-size: 15px;
+        color: #f2c082;
+        background-color: #490715;
+        border: 1px solid #f2c082;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100px;
+        transition: 0.3s;
+        font-weight: bold;
+        position: relative;
+    }
 
-.content-contact-right-btn:hover{
-    color: #490715;
-    background-color: #f2c082;
-}
+    .content-contact-right-btn:hover{
+        color: #490715;
+        background-color: #f2c082;
+    }
 
-.content-contact-right-btn:focus{
-    background-color: #8a530f;
-}
+    .content-contact-right-btn:focus{
+        background-color: #8a530f;
+    }
 
-.content-contact-comment{
-    height: 300px;
-    width: 80%;
-}
+    .content-contact-comment{
+        height: 300px;
+        width: 80%;
+    }
 
-.content-left{
-    min-width: 350px;
-    margin-left: 0.5%;
-    position: relative;
-    width: 33%;
-    height: 500px;
-    text-align: center;
-    float: left;
-    background-image: url("resources/img/metallica.jpg");
-    background-size: cover;
-    background-position: center;
-}
+/** End contact page **/
 
-.content-middle{
-    min-width: 350px;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    position: relative;
-    width: 32%;
-    height: 500px;
-    text-align: center;
-    float: left;
-    background-image: url("resources/img/wt.jpg");
-    background-size: cover;
-    background-position: center;
-}
+/** Home page **/
 
-.content-right{
-    min-width: 350px;
-    margin-right: 0.5%;
-    position: relative;
-    width: 33%;
-    height: 500px;
-    text-align: center;
-    float: left;
-    background-image: url("resources/img/nw.jpg");
-    background-size: cover;
-    background-position: center;
-}
+    .content-left{
+        min-width: 350px;
+        margin-left: 0.5%;
+        position: relative;
+        width: 33%;
+        height: 500px;
+        text-align: center;
+        float: left;
+        background-image: url("resources/img/metallica.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 
-.content-inner-title{
-    padding: 1%;
-    color: #ffffff;
-    font-size: 2em;
-    word-wrap: break-word;
-}
+    .content-middle{
+        min-width: 350px;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        position: relative;
+        width: 32%;
+        height: 500px;
+        text-align: center;
+        float: left;
+        background-image: url("resources/img/wt.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 
-.content-inner-container{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-color: rgba(20, 15, 55,0.8);
-    text-align: left;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-}
-.content-inner-container:hover{
-    visibility: visible!important;
-    opacity: 1;
-}
-.content-inner-container-text {
-    position: relative;
-    color: #ffffff;
-}
+    .content-right{
+        min-width: 350px;
+        margin-right: 0.5%;
+        position: relative;
+        width: 33%;
+        height: 500px;
+        text-align: center;
+        float: left;
+        background-image: url("resources/img/nw.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 
-/**Sub-content **/
-.sub-content{
-    margin-top: 3%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
+    .content-inner-title{
+        padding: 1%;
+        color: #ffffff;
+        font-size: 2em;
+        word-wrap: break-word;
+    }
 
-/** Left sub-content **/
-.sub-content-left{
-    word-wrap: break-word;
-    float: left;
-    position: relative;
-    width: 33%;
-    margin-left: 0.5%;
-    background-color: rgba(18, 13, 53,0.5);
-}
+    .content-inner-container{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        background-color: rgba(20, 15, 55,0.8);
+        text-align: left;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    .content-inner-container:hover{
+        visibility: visible!important;
+        opacity: 1;
+    }
+    .content-inner-container-text {
+        position: relative;
+        color: #ffffff;
+    }
 
-.sub-content-left-title{
-    color: #ffffff;
-    font-size: 2em;
-    padding: 10px;
-}
+    /**Sub-content **/
+    .sub-content{
+        margin-top: 3%;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 
-.event{
-    overflow: hidden;
-    position: relative;
-}
+    /** Left sub-content **/
+    .sub-content-left{
+        word-wrap: break-word;
+        float: left;
+        position: relative;
+        width: 33%;
+        margin-left: 0.5%;
+        background-color: rgba(18, 13, 53,0.5);
+    }
 
-.event-text{
-    cursor: pointer;
-    padding-left: 10px;
-    position: relative;
-    color: #ffffff;
-    font-size: 1em;
-    width: 60%;
-    border-bottom: 1px solid transparent;
-    transition: 1s;
+    .sub-content-left-title{
+        color: #ffffff;
+        font-size: 2em;
+        padding: 10px;
+    }
 
-}
+    .event{
+        overflow: hidden;
+        position: relative;
+    }
 
-.event-text:hover{
-    border-color: #ffffff;
-}
+    .event-text{
+        cursor: pointer;
+        padding-left: 10px;
+        position: relative;
+        color: #ffffff;
+        font-size: 1em;
+        width: 60%;
+        border-bottom: 1px solid transparent;
+        transition: 1s;
 
-/** Right sub-content **/
-.sub-content-right{
-    min-width: 250px;
-    word-wrap: break-word;
-    float: left;
-    position: relative;
-    width: 65.5%;
-    margin-left: 0.5%;
-    background-color: rgba(75, 4, 18,0.5);
-    padding-bottom: 50px;
-}
+    }
 
-.sub-content-right-title{
-    color: #ffffff;
-    font-size: 2em;
-    padding: 10px;
-}
+    .event-text:hover{
+        border-color: #ffffff;
+    }
+    /** End left sub-content **/
 
-.news_1{
-    min-width: 250px;
-    min-height: 250px;
-    float: left;
-    border:1px solid #ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 30%;
-    margin-left: 0.5%;
 
-}
+    /** Right sub-content **/
+    .sub-content-right{
+        min-width: 250px;
+        word-wrap: break-word;
+        float: left;
+        position: relative;
+        width: 65.5%;
+        margin-left: 0.5%;
+        background-color: rgba(75, 4, 18,0.5);
+        padding-bottom: 50px;
+    }
 
-.news_2{
-    min-width: 250px;
-    min-height: 250px;
-    float: left;
-    border:1px solid #ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 30%;
-    margin-left: 2%;
-    margin-right: 0.5%;
-}
+    .sub-content-right-title{
+        color: #ffffff;
+        font-size: 2em;
+        padding: 10px;
+    }
 
-.news_3{
-    min-width: 250px;
-    min-height: 250px;
-    float: left;
-    border:1px solid #ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 30%;
-    margin-right: 0.5%;
-}
-.news-title{
+    .news_1{
+        min-width: 250px;
+        min-height: 250px;
+        float: left;
+        border:1px solid #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 30%;
+        margin-left: 0.5%;
 
-    font-size: 1em;
-    color: #ffffff;
-}
+    }
 
-.news-date{
-    font-size: 13px;
-    color: #e6e6e6;
-}
+    .news_2{
+        min-width: 250px;
+        min-height: 250px;
+        float: left;
+        border:1px solid #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 30%;
+        margin-left: 2%;
+        margin-right: 0.5%;
+    }
 
-.news-text{
-    color: #ffffff;
-}
-/** Footer **/
-.footer{
-    overflow: hidden;
-    position: relative;
-}
+    .news_3{
+        min-width: 250px;
+        min-height: 250px;
+        float: left;
+        border:1px solid #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 30%;
+        margin-right: 0.5%;
+    }
+    .news-title{
 
-/** Sub-Footer **/
-.sub-footer{
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-}
+        font-size: 1em;
+        color: #ffffff;
+    }
 
-.sub-footer-content{
-    position: relative;
-    color: #ffffff;
+    .news-date{
+        font-size: 13px;
+        color: #e6e6e6;
+    }
 
-}
+    .news-text{
+        color: #ffffff;
+    }
+    /** End sub-content-right **/
+/** End Home page **/
+
+/** Tour page **/
+
+    .content-tour{
+        margin-top: 100px;
+        overflow: hidden;
+        width: 70%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        color: #ffffff;
+        background: rgba(1,46,227,0.5);
+        background: -webkit-linear-gradient(left, rgba(19, 14, 54,0.5) 0%, rgba(19, 14, 54,0.5) 7%, rgba(77,4,21,0.5) 67%, rgba(77,4,21,0.5) 100%);
+        background: linear-gradient(to right, rgba(19, 14, 54,0.5) 0%, rgba(19, 14, 54,0.5) 7%, rgba(77,4,21,0.5) 67%, rgba(77,4,21,0.5) 100%);
+    }
+
+
+
+
+    .tour-table{
+        color: #ffffff;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .tour-table-thead{
+       height: 35px;
+        font-size: 18px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+
+
+/** End tour page **/
+
+/** Multi page **/
+
+    /** Header **/
+    .header{
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .header-title{
+        font-size: 2.5em;
+        color: #ffffff;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+    }
+
+    /** Footer **/
+    .footer{
+        overflow: hidden;
+        position: relative;
+    }
+
+    /** Sub-Footer **/
+    .sub-footer{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    .sub-footer-content{
+        position: relative;
+        color: #ffffff;
+
+    }
+
+/** End multi page **/
+
 /**Responsive elements **/
 @media screen and (max-width : 1565px){
     .news_1{
@@ -515,6 +566,12 @@ input[type=checkbox]:checked ~ #menu{
 
     .content-right{
         margin: 0%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 579px){
+    .content-tour{
         width: 100%;
     }
 }
