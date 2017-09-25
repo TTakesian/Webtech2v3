@@ -5,17 +5,17 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Contact</title>
 </head>
-<body onload="load_navbar()">
+<body class="contact" onload="load_navbar()">
     <div class="container">
         <!-- Navigation bar -->
         <div class="navigation-container">
-            <label for="show-menu" class="show-menu">Show Menu</label>
+            <label for="show-menu" class="show-menu"><strong>MENU</strong></label>
             <input type="checkbox" id="show-menu" role="button">
             <ul id="menu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="tour.html" id="tour">Tours</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+                <li><a href="about.html" id="about">About</a></li>
             </ul>
         </div>
         <!-->
@@ -53,10 +53,46 @@
             </div>
         </div>
 
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-inner-content">
+                <h1>SPONSORS</h1>
+                <hr>
+                <div class="footer-inner-content-links">
+                    <h2>PARTNERS</h2>
+                    <h5>MOJO Concerts</h5>
+                    <h5>LOGC7000</h5>
+                </div>
+                <div class="footer-inner-content-links">
+                    <h2>MUSIC</h2>
+                    <h5>Terms and conditions</h5>
+                    <h5>Contact</h5>
+                </div>
+                <div class="footer-inner-content-links">
+                    <h2>LINKS</h2>
+                    <h5>Metalbus / Eventtrip</h5>
+                    <h5>Rock Hard</h5>
+                    <h5>Rock Tribune</h5>
+                    <h5>Aardschok</h5>
+                </div>
+                <div class="footer-inner-content-links">
+                    <h2>SOCIAL MEDIA</h2>
+                    <h5>Twitter</h5>
+                    <h5>Facebook</h5>
+                    <h5>YouTube</h5>
+                </div>
+            </div>
+        </div>
+        <!--->
+
         <!--Sub-footer -->
         <div class="sub-footer">
             <h5 class="sub-footer-content">© Tavet Takesian en Govert de Swart 2017</h5>
         </div>
+        <!--->
+
+        <!--To Top -->
+        <button onclick="topFunction()" id="toTop" title="Go to top">TOP</button>
         <!--->
     </div>
     <script src="js.js"></script>

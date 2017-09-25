@@ -5,17 +5,17 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Home</title>
 </head>
-<body onload="load_navbar()">
+<body class="home" onload="load_navbar()">
 <div class="container">
     <!-- Navigation bar -->
     <div class="navigation-container">
-        <label for="show-menu" class="show-menu">Show Menu</label>
+        <label for="show-menu" class="show-menu"><strong>MENU</strong></label>
         <input type="checkbox" id="show-menu" role="button">
         <ul id="menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="home.html" id="home">Home</a></li>
+            <li><a href="tour.html" id="tour">Tours</a></li>
+            <li><a href="contact.html" id="contact">Contact</a></li>
+            <li><a href="about.html" id="about">About</a></li>
         </ul>
     </div>
     <!-->
@@ -50,22 +50,23 @@
             <div class="sub-content-left-title">
                 UPCOMING EVENTS<hr>
             </div>
-                <div class="event">
-                    <h4 class="event-text">25-09 | Metallica - The Whiplash Experience</h4>
-                </div>
-                <div class="event">
-                    <h4 class="event-text">20-10 | Nightwish - FortaRock</h4>
-                </div>
-                <div class="event">
-                    <h4 class="event-text">22-11 | Metallica - The Unforgiven Experience</h4>
-                </div>
-                <div class="event">
-                    <h4 class="event-text">19-12 | Parkway Drive - FortaRock</h4>
-                </div>
-                <div class="event">
-                    <h4 class="event-text">30-12 | Within Temptation - Theater Festival</h4>
-                </div>
+            <div class="event">
+                <h4 class="event-text">25-09 | Metallica - The Whiplash Experience</h4>
             </div>
+            <div class="event">
+                <h4 class="event-text">20-10 | Nightwish - FortaRock</h4>
+            </div>
+            <div class="event">
+                <h4 class="event-text">22-11 | Metallica - The Unforgiven Experience</h4>
+            </div>
+            <div class="event">
+                <h4 class="event-text">19-12 | Parkway Drive - FortaRock</h4>
+            </div>
+            <div class="event">
+                <h4 class="event-text">30-12 | Within Temptation - Theater Festival</h4>
+            </div><hr style="margin-bottom: 30px;">
+            <a href="tour.html" style="margin-top: 50px; margin-left: 10px;" class="content-contact-right-btn" title="Go to tours">See all dates</a>
+        </div>
 
         <div class="sub-content-right">
             <div class="sub-content-right-title">
@@ -102,11 +103,45 @@
     </div>
     <!-->
 
-
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-inner-content">
+            <h1>SPONSORS</h1>
+            <hr>
+            <div class="footer-inner-content-links">
+                <h2>PARTNERS</h2>
+                <h5>MOJO Concerts</h5>
+                <h5>LOGC7000</h5>
+            </div>
+            <div class="footer-inner-content-links">
+                <h2>MUSIC</h2>
+                <h5>Terms and conditions</h5>
+                <h5>Contact</h5>
+            </div>
+            <div class="footer-inner-content-links">
+                <h2>LINKS</h2>
+                <h5>Metalbus / Eventtrip</h5>
+                <h5>Rock Hard</h5>
+                <h5>Rock Tribune</h5>
+                <h5>Aardschok</h5>
+            </div>
+            <div class="footer-inner-content-links">
+                <h2>SOCIAL MEDIA</h2>
+                <h5>Twitter</h5>
+                <h5>Facebook</h5>
+                <h5>YouTube</h5>
+            </div>
+        </div>
+    </div>
+    <!--->
     <!--Sub-footer -->
     <div class="sub-footer">
         <h5 class="sub-footer-content">© Tavet Takesian en Govert de Swart 2017</h5>
     </div>
+    <!--->
+
+    <!--To Top -->
+    <button onclick="topFunction()" id="toTop" title="Go to top">TOP</button>
     <!--->
 </div>
 
