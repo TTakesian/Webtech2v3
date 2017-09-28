@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Title</title>
+    <title>Tours</title>
 </head>
-<body class="about">
+<body class="schedule">
     <div class="container">
         <!-- Navigation bar -->
         <div class="navigation-container">
@@ -19,14 +19,67 @@
             </ul>
         </div>
         <!-->
+
         <!-- Header and welcome screen -->
         <div class="header">
             <h1 class="header-title">
                 Welcome to Novemberfest!<br>
                 <p style="font-size: 20px;">Saturday 9 November AND Sunday 10 November</p>
             </h1>
+
         </div>
         <!-->
+
+        <div class="content-tour">
+            <h1 style="margin-left: 1%">Dates and time</h1>
+            <hr>
+            <!-- Schedule table -->
+            <table class="schedule-table">
+                <tr>
+                    <th class="th"><h3>Day</h3></th>
+                    <th class="th"><h3>Time</h3></th>
+                    <th class="th"><h3>Band</h3></th>
+                </tr>
+                <tr>
+                    <td class="td-day">
+                        <h1>
+                            Saturday<br>
+                            9<br>
+                            November
+                        </h1>
+                    </td>
+
+                    <td class="td-time">
+                        <h3>19:00 - 21:00</h3><hr>
+                        <h3>21:30 - 23:30</h3><hr>
+                        <h3>00:00 - 02:00</h3><hr>
+                    </td>
+                    <td class="td-band">
+                        <h3>Parkway Drive</h3><hr>
+                        <h3>Metallica(Whiplash)</h3><hr>
+                        <h3>Nightwish</h3><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-day">
+                        <h1>
+                            Sunday<br>
+                            10<br>
+                            November
+                        </h1>
+                    </td>
+                    <td class="td-time">
+                        <h3>19:00 - 21:00</h3><hr>
+                        <h3>21:30 - 00:30</h3><hr>
+                    </td>
+                    <td class="td-band">
+                        <h3>Within Temptation</h3><hr>
+                        <h3>Metallica(The Unforgiven)</h3><hr>
+                    </td>
+                </tr>
+            </table>
+            <!--->
+        </div>
 
         <!-- Footer -->
         <div class="footer">
@@ -70,5 +123,6 @@
         <button onclick="topFunction()" id="toTop" title="Go to top">TOP</button>
         <!--->
     </div>
+<script src="js.js"></script>
 </body>
 </html>
