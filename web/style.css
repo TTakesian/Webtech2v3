@@ -134,6 +134,66 @@ body{
 
 /** Home page **/
 
+.control-panel{
+    padding: 10px;
+    color: #ffffff;
+    display: none;
+    position: fixed;
+    float: left;
+    margin-top: 19%;
+    z-index: 1000;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    background-image: url("resources/img/footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.control-panel-ul{
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.control-panel-ul-btn{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.black-btn{
+    cursor: pointer;
+    background-color: black;
+    height: 15px;
+}
+
+.red-btn{
+    cursor: pointer;
+    background-color: red;
+    height: 15px;
+}
+
+.blue-btn{
+    cursor: pointer;
+    background-color: blue;
+    height: 15px;
+}
+
+.control-panel-btn{
+    cursor: pointer;
+    position: fixed;
+    float: left;
+    margin-top: 17%;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+
 .content-left{
     min-width: 350px;
     margin-left: 0.5%;
@@ -450,7 +510,21 @@ body{
 
 /** About **/
     .content-about{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
 
+    .content-about-image{
+
+        float: left;
+        position: relative;
+
+    }
+
+    .content-about-right{
+        float: left;
+        position: relative;
     }
 /** End about page **/
 
@@ -498,6 +572,7 @@ body{
         width: 25%;
         min-width: 230px;
     }
+
     /** Sub-Footer **/
     .sub-footer{
         overflow: hidden;

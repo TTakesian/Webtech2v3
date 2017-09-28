@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Home</title>
 </head>
-<body class="home" onload="load_navbar()">
+<body class="home">
 <div class="container">
     <!-- Navigation bar -->
-    <div class="navigation-container">
+    <div class="navigation-container" id="navigation-container">
         <label for="show-menu" class="show-menu"><strong>MENU</strong></label>
         <input type="checkbox" id="show-menu" role="button">
         <ul id="menu">
@@ -19,6 +19,22 @@
         </ul>
     </div>
     <!-->
+
+    <!-- Control panel -->
+    <button class="control-panel-btn" onclick="triggerControlPanel();" id="control-panel-btn">Show control panel</button>
+
+    <div class="control-panel" id="control-panel">
+        <h3>Control panel</h3>
+        <ul class="control-panel-ul">
+            <p style="padding: 0; font-size: 15px;">Change theme</p>
+            <li>
+                <button class="black-btn" onclick="blackTheme();"></button>
+                <button class="red-btn" onclick="redTheme();"></button>
+                <button class="blue-btn" onclick="blueTheme();"></button>
+            </li>
+        </ul>
+    </div>
+    <!--->
 
     <!-- Header and welcome screen -->
     <div class="header">
@@ -49,7 +65,7 @@
         </div>
     </div>
 
-    <div class="sub-content">
+    <div class="sub-content" id="sub-content">
         <div class="sub-content-left">
             <div class="sub-content-left-title">
                 UPCOMING EVENTS IN 2018<hr>
@@ -107,7 +123,7 @@
     <!-->
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-inner-content">
             <h1>SPONSORS</h1>
             <hr>
