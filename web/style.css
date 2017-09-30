@@ -513,18 +513,48 @@ body{
         position: relative;
         overflow: hidden;
         width: 100%;
+        background-image: url("resources/img/footer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    .content-about-image{
-
+    .content-about-left{
+        color: #ffffff;
+        width: 48%;
         float: left;
         position: relative;
-
+        padding-left: 2%;
     }
 
     .content-about-right{
+        margin: 2%;
+        width: 35%;
+        height: 400px;
+        background-image: url("resources/img/about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         float: left;
         position: relative;
+    }
+
+
+    .content-about-images-container{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .content-about-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        min-width: 300px;
+        height: 300px;
+        position: relative;
+        width: 30%;
+        margin: 1%;
     }
 /** End about page **/
 
@@ -674,6 +704,21 @@ body{
     }
 }
 
+@media screen and (max-width : 974px){
+    .content-about-image{
+        min-width: 500px;
+        width: 100%;
+    }
+
+    .content-about-left{
+        width: 85%;
+    }
+
+    .content-about-right{
+        min-width: 500px;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width : 873px){
     .sub-content-left{

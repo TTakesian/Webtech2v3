@@ -38,7 +38,7 @@ function triggerControlPanel() {
 }
 
 /***
- * The code bellow will allow us to change the color of some divs
+ * The code bellow will allow us to change the background image of some divs
  *
  */
 
