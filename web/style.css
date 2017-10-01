@@ -188,7 +188,7 @@ body{
     cursor: pointer;
     position: fixed;
     float: left;
-    margin-top: 17%;
+    margin-top: 12%;
     z-index: 1000;
     background-color: #ffffff;
 }
@@ -468,7 +468,27 @@ body{
     }
 
 
+    .buy-tickets{
+        padding: 10px;
+        color: #f2c082;
+        background-color: #490715;
+        border: 1px solid #f2c082;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+    }
 
+    .buy-tickets:hover{
+        color: #490715;
+        background-color: #f2c082;
+    }
+
+    .buy-tickets:focus{
+        background-color: #8a530f;
+    }
 
     .schedule-table{
         min-width: 576px;
